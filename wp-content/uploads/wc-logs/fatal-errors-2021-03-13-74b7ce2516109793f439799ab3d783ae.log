@@ -1,0 +1,134 @@
+2021-03-13T20:56:18+00:00 CRITICAL Uncaught Error: Call to a member function get_type() on null in /var/www/shop.netping.xa6.ru/wp-content/themes/npshop/functions.php:488
+Stack trace:
+#0 /var/www/shop.netping.xa6.ru/wp-admin/includes/template.php(1389): create_meta_meta_box(Object(WP_Post), Array)
+#1 /var/www/shop.netping.xa6.ru/wp-admin/edit-form-advanced.php(688): do_meta_boxes(Object(WP_Screen), 'normal', Object(WP_Post))
+#2 /var/www/shop.netping.xa6.ru/wp-admin/post.php(206): require('/var/www/shop.n...')
+#3 {main}
+  thrown в /var/www/shop.netping.xa6.ru/wp-content/themes/npshop/functions.php на строке 488
+
+2021-03-13T20:58:44+00:00 CRITICAL Uncaught Error: Call to undefined method WP_Post::get_type() in /var/www/shop.netping.xa6.ru/wp-content/themes/npshop/functions.php:489
+Stack trace:
+#0 /var/www/shop.netping.xa6.ru/wp-admin/includes/template.php(1389): create_meta_meta_box(Object(WP_Post), Array)
+#1 /var/www/shop.netping.xa6.ru/wp-admin/edit-form-advanced.php(688): do_meta_boxes(Object(WP_Screen), 'normal', Object(WP_Post))
+#2 /var/www/shop.netping.xa6.ru/wp-admin/post.php(206): require('/var/www/shop.n...')
+#3 {main}
+  thrown в /var/www/shop.netping.xa6.ru/wp-content/themes/npshop/functions.php на строке 489
+
+2021-03-13T21:14:42+00:00 CRITICAL Uncaught Exception: Неверный товар. in /var/www/shop.netping.xa6.ru/wp-content/plugins/woocommerce/includes/data-stores/class-wc-product-data-store-cpt.php:167
+Stack trace:
+#0 /var/www/shop.netping.xa6.ru/wp-content/plugins/woocommerce/includes/class-wc-data-store.php(159): WC_Product_Data_Store_CPT->read(Object(WC_Product))
+#1 /var/www/shop.netping.xa6.ru/wp-content/plugins/woocommerce/includes/abstracts/abstract-wc-product.php(135): WC_Data_Store->read(Object(WC_Product))
+#2 /var/www/shop.netping.xa6.ru/wp-content/themes/npshop/functions.php(492): WC_Product->__construct(169)
+#3 /var/www/shop.netping.xa6.ru/wp-admin/includes/template.php(1389): create_meta_meta_box(Object(WP_Post), Array)
+#4 /var/www/shop.netping.xa6.ru/wp-admin/edit-form-advanced.php(688): do_meta_boxes(Object(WP_Screen), 'normal', Object(WP_Post))
+#5 /var/www/shop.netping.xa6.ru/wp-admin/post.php(206): require('/var/www/shop.n...')
+#6 {main}
+  thrown в /var/www/shop.netping.xa6.ru/wp-content/plugins/woocommerce/includes/data-stores/class-wc-product-data-store-cpt.php на строке 167
+
+2021-03-13T21:15:02+00:00 CRITICAL Uncaught Exception: Неверный товар. in /var/www/shop.netping.xa6.ru/wp-content/plugins/woocommerce/includes/data-stores/class-wc-product-data-store-cpt.php:167
+Stack trace:
+#0 /var/www/shop.netping.xa6.ru/wp-content/plugins/woocommerce/includes/class-wc-data-store.php(159): WC_Product_Data_Store_CPT->read(Object(WC_Product))
+#1 /var/www/shop.netping.xa6.ru/wp-content/plugins/woocommerce/includes/abstracts/abstract-wc-product.php(135): WC_Data_Store->read(Object(WC_Product))
+#2 /var/www/shop.netping.xa6.ru/wp-content/themes/npshop/functions.php(492): WC_Product->__construct(169)
+#3 /var/www/shop.netping.xa6.ru/wp-admin/includes/template.php(1389): create_meta_meta_box(Object(WP_Post), Array)
+#4 /var/www/shop.netping.xa6.ru/wp-admin/edit-form-advanced.php(688): do_meta_boxes(Object(WP_Screen), 'normal', Object(WP_Post))
+#5 /var/www/shop.netping.xa6.ru/wp-admin/post.php(206): require('/var/www/shop.n...')
+#6 {main}
+  thrown в /var/www/shop.netping.xa6.ru/wp-content/plugins/woocommerce/includes/data-stores/class-wc-product-data-store-cpt.php на строке 167
+
+2021-03-13T21:15:03+00:00 CRITICAL Uncaught Exception: Неверный товар. in /var/www/shop.netping.xa6.ru/wp-content/plugins/woocommerce/includes/data-stores/class-wc-product-data-store-cpt.php:167
+Stack trace:
+#0 /var/www/shop.netping.xa6.ru/wp-content/plugins/woocommerce/includes/class-wc-data-store.php(159): WC_Product_Data_Store_CPT->read(Object(WC_Product))
+#1 /var/www/shop.netping.xa6.ru/wp-content/plugins/woocommerce/includes/abstracts/abstract-wc-product.php(135): WC_Data_Store->read(Object(WC_Product))
+#2 /var/www/shop.netping.xa6.ru/wp-content/themes/npshop/functions.php(492): WC_Product->__construct(169)
+#3 /var/www/shop.netping.xa6.ru/wp-admin/includes/template.php(1389): create_meta_meta_box(Object(WP_Post), Array)
+#4 /var/www/shop.netping.xa6.ru/wp-admin/edit-form-advanced.php(688): do_meta_boxes(Object(WP_Screen), 'normal', Object(WP_Post))
+#5 /var/www/shop.netping.xa6.ru/wp-admin/post.php(206): require('/var/www/shop.n...')
+#6 {main}
+  thrown в /var/www/shop.netping.xa6.ru/wp-content/plugins/woocommerce/includes/data-stores/class-wc-product-data-store-cpt.php на строке 167
+
+2021-03-13T22:03:38+00:00 CRITICAL Uncaught Exception: Неверный товар. in /var/www/shop.netping.xa6.ru/wp-content/plugins/woocommerce/includes/data-stores/class-wc-product-data-store-cpt.php:167
+Stack trace:
+#0 /var/www/shop.netping.xa6.ru/wp-content/plugins/woocommerce/includes/class-wc-data-store.php(159): WC_Product_Data_Store_CPT->read(Object(WC_Product))
+#1 /var/www/shop.netping.xa6.ru/wp-content/plugins/woocommerce/includes/abstracts/abstract-wc-product.php(135): WC_Data_Store->read(Object(WC_Product))
+#2 /var/www/shop.netping.xa6.ru/wp-content/themes/npshop/functions.php(495): WC_Product->__construct(169)
+#3 /var/www/shop.netping.xa6.ru/wp-admin/includes/template.php(1389): create_meta_meta_box(Object(WP_Post), Array)
+#4 /var/www/shop.netping.xa6.ru/wp-admin/edit-form-advanced.php(688): do_meta_boxes(Object(WP_Screen), 'normal', Object(WP_Post))
+#5 /var/www/shop.netping.xa6.ru/wp-admin/post.php(206): require('/var/www/shop.n...')
+#6 {main}
+  thrown в /var/www/shop.netping.xa6.ru/wp-content/plugins/woocommerce/includes/data-stores/class-wc-product-data-store-cpt.php на строке 167
+
+2021-03-13T22:17:31+00:00 CRITICAL Out of memory (allocated 14680064) (tried to allocate 20480 bytes) в /var/www/shop.netping.xa6.ru/wp-includes/pomo/translations.php на строке 100
+
+2021-03-13T22:17:32+00:00 CRITICAL Out of memory (allocated 16777216) (tried to allocate 20480 bytes) в /var/www/shop.netping.xa6.ru/wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php на строке 2473
+
+2021-03-13T22:25:57+00:00 CRITICAL Out of memory (allocated 2097152) (tried to allocate 315392 bytes) in /var/www/shop.netping.xa6.ru/wp-includes/pomo/streams.php on line 215
+
+2021-03-13T22:28:16+00:00 CRITICAL Out of memory (allocated 2097152) (tried to allocate 315392 bytes) in /var/www/shop.netping.xa6.ru/wp-includes/pomo/streams.php on line 215
+
+2021-03-13T22:29:53+00:00 CRITICAL Out of memory (allocated 2097152) (tried to allocate 315392 bytes) in /var/www/shop.netping.xa6.ru/wp-includes/pomo/streams.php on line 215
+
+2021-03-13T22:36:27+00:00 CRITICAL Out of memory (allocated 2097152) (tried to allocate 315392 bytes) in /var/www/shop.netping.xa6.ru/wp-includes/pomo/streams.php on line 215
+
+2021-03-13T22:36:27+00:00 CRITICAL Out of memory (allocated 4194304) (tried to allocate 299008 bytes) in /var/www/shop.netping.xa6.ru/wp-includes/pomo/streams.php on line 215
+
+2021-03-13T22:37:31+00:00 CRITICAL Out of memory (allocated 2097152) (tried to allocate 126976 bytes) in /var/www/shop.netping.xa6.ru/wp-includes/pomo/streams.php on line 215
+
+2021-03-13T22:37:44+00:00 CRITICAL Out of memory (allocated 2097152) (tried to allocate 315392 bytes) in /var/www/shop.netping.xa6.ru/wp-includes/pomo/streams.php on line 215
+
+2021-03-13T22:37:51+00:00 CRITICAL Out of memory (allocated 2097152) (tried to allocate 20480 bytes) в /var/www/shop.netping.xa6.ru/wp-includes/functions.php на строке 624
+
+2021-03-13T22:39:04+00:00 CRITICAL Out of memory (allocated 2097152) (tried to allocate 315392 bytes) in /var/www/shop.netping.xa6.ru/wp-includes/pomo/streams.php on line 215
+
+2021-03-13T22:39:29+00:00 CRITICAL Out of memory (allocated 4194304) (tried to allocate 20480 bytes) в /var/www/shop.netping.xa6.ru/wp-includes/pomo/mo.php на строке 323
+
+2021-03-13T22:39:30+00:00 CRITICAL Out of memory (allocated 4194304) (tried to allocate 20480 bytes) в /var/www/shop.netping.xa6.ru/wp-includes/functions.php на строке 624
+
+2021-03-13T22:39:38+00:00 CRITICAL Out of memory (allocated 2097152) (tried to allocate 20480 bytes) в /var/www/shop.netping.xa6.ru/wp-includes/functions.php на строке 624
+
+2021-03-13T22:39:54+00:00 CRITICAL Out of memory (allocated 2097152) (tried to allocate 20480 bytes) в /var/www/shop.netping.xa6.ru/wp-includes/class-wp-hook.php на строке 76
+
+2021-03-13T22:40:00+00:00 CRITICAL Out of memory (allocated 2097152) (tried to allocate 315392 bytes) in /var/www/shop.netping.xa6.ru/wp-includes/pomo/streams.php on line 215
+
+2021-03-13T22:40:26+00:00 CRITICAL Out of memory (allocated 2097152) (tried to allocate 315392 bytes) in /var/www/shop.netping.xa6.ru/wp-includes/pomo/streams.php on line 215
+
+2021-03-13T22:40:28+00:00 CRITICAL Out of memory (allocated 2097152) (tried to allocate 315392 bytes) in /var/www/shop.netping.xa6.ru/wp-includes/pomo/streams.php on line 215
+
+2021-03-13T22:43:21+00:00 CRITICAL Out of memory (allocated 4194304) (tried to allocate 20480 bytes) в /var/www/shop.netping.xa6.ru/wp-admin/includes/class-wp-privacy-policy-content.php на строке 529
+
+2021-03-13T22:44:12+00:00 CRITICAL Out of memory (allocated 6291456) (tried to allocate 266240 bytes) in /var/www/shop.netping.xa6.ru/wp-includes/pomo/streams.php on line 118
+
+2021-03-13T22:44:12+00:00 CRITICAL Out of memory (allocated 10485760) (tried to allocate 20480 bytes) в /var/www/shop.netping.xa6.ru/wp-content/plugins/woocommerce/packages/woocommerce-admin/src/API/Reports/Downloads/Stats/Controller.php на строке 0
+
+2021-03-13T22:44:12+00:00 CRITICAL Out of memory (allocated 2097152) (tried to allocate 20480 bytes) в /var/www/shop.netping.xa6.ru/wp-content/plugins/woocommerce/packages/woocommerce-admin/src/API/Reports/Downloads/Stats/Controller.php на строке 0
+
+2021-03-13T22:46:38+00:00 CRITICAL Out of memory (allocated 23068672) (tried to allocate 20480 bytes) в /var/www/shop.netping.xa6.ru/wp-includes/pomo/translations.php на строке 100
+
+2021-03-13T22:46:38+00:00 CRITICAL Out of memory (allocated 14680064) (tried to allocate 20480 bytes) в /var/www/shop.netping.xa6.ru/wp-includes/pomo/translations.php на строке 100
+
+2021-03-13T22:47:07+00:00 CRITICAL Out of memory (allocated 12582912) (tried to allocate 8192 bytes) в /var/www/shop.netping.xa6.ru/wp-includes/functions.php на строке 6457
+
+2021-03-13T22:47:24+00:00 CRITICAL Out of memory (allocated 2097152) (tried to allocate 315392 bytes) in /var/www/shop.netping.xa6.ru/wp-includes/pomo/streams.php on line 215
+
+2021-03-13T22:49:19+00:00 CRITICAL Out of memory (allocated 4194304) (tried to allocate 299008 bytes) in /var/www/shop.netping.xa6.ru/wp-includes/pomo/streams.php on line 215
+
+2021-03-13T22:59:16+00:00 CRITICAL Out of memory (allocated 2097152) (tried to allocate 65536 bytes) в /var/www/shop.netping.xa6.ru/wp-admin/includes/admin.php на строке 92
+
+2021-03-13T22:59:28+00:00 CRITICAL Out of memory (allocated 2097152) (tried to allocate 315392 bytes) in /var/www/shop.netping.xa6.ru/wp-includes/pomo/streams.php on line 215
+
+2021-03-13T22:59:28+00:00 CRITICAL Out of memory (allocated 2097152) (tried to allocate 299008 bytes) in /var/www/shop.netping.xa6.ru/wp-includes/pomo/streams.php on line 215
+
+2021-03-13T22:59:41+00:00 CRITICAL Out of memory (allocated 2097152) (tried to allocate 8192 bytes) в /var/www/shop.netping.xa6.ru/wp-includes/capabilities.php на строке 1036
+
+2021-03-13T22:59:45+00:00 CRITICAL Out of memory (allocated 2097152) (tried to allocate 315392 bytes) in /var/www/shop.netping.xa6.ru/wp-includes/pomo/streams.php on line 215
+
+2021-03-13T22:59:47+00:00 CRITICAL Out of memory (allocated 2097152) (tried to allocate 315392 bytes) in /var/www/shop.netping.xa6.ru/wp-includes/pomo/streams.php on line 215
+
+2021-03-13T23:11:24+00:00 CRITICAL Out of memory (allocated 2097152) (tried to allocate 319488 bytes) in /var/www/shop.netping.xa6.ru/wp-includes/pomo/streams.php on line 215
+
+2021-03-13T23:14:09+00:00 CRITICAL Out of memory (allocated 2097152) (tried to allocate 319488 bytes) in /var/www/shop.netping.xa6.ru/wp-includes/pomo/streams.php on line 215
+
+2021-03-13T23:17:38+00:00 CRITICAL Out of memory (allocated 2097152) (tried to allocate 65536 bytes) в /var/www/shop.netping.xa6.ru/wp-content/plugins/woocommerce/vendor/jetpack-autoloader/class-php-autoloader.php на строке 87
+
+2021-03-13T23:23:15+00:00 CRITICAL Out of memory (allocated 2097152) (tried to allocate 319488 bytes) in /var/www/shop.netping.xa6.ru/wp-includes/pomo/streams.php on line 215
+

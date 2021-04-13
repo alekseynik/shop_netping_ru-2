@@ -1,0 +1,20 @@
+2021-03-29T20:13:59+00:00 CRITICAL Uncaught Error: Call to a member function is_purchasable() on null in /var/www/shop.netping.xa6.ru/wp-content/themes/npshop/functions.php:370
+Stack trace:
+#0 /var/www/shop.netping.xa6.ru/wp-settings.php(528): include()
+#1 /var/www/shop.netping.xa6.ru/wp-config.php(81): require_once('/var/www/shop.n...')
+#2 /var/www/shop.netping.xa6.ru/wp-load.php(37): require_once('/var/www/shop.n...')
+#3 /var/www/shop.netping.xa6.ru/wp-blog-header.php(13): require_once('/var/www/shop.n...')
+#4 /var/www/shop.netping.xa6.ru/index.php(17): require('/var/www/shop.n...')
+#5 {main}
+  thrown в /var/www/shop.netping.xa6.ru/wp-content/themes/npshop/functions.php на строке 370
+
+2021-03-29T20:14:00+00:00 CRITICAL Uncaught Error: Call to a member function is_purchasable() on null in /var/www/shop.netping.xa6.ru/wp-content/themes/npshop/functions.php:370
+Stack trace:
+#0 /var/www/shop.netping.xa6.ru/wp-settings.php(528): include()
+#1 /var/www/shop.netping.xa6.ru/wp-config.php(81): require_once('/var/www/shop.n...')
+#2 /var/www/shop.netping.xa6.ru/wp-load.php(37): require_once('/var/www/shop.n...')
+#3 /var/www/shop.netping.xa6.ru/wp-blog-header.php(13): require_once('/var/www/shop.n...')
+#4 /var/www/shop.netping.xa6.ru/index.php(17): require('/var/www/shop.n...')
+#5 {main}
+  thrown в /var/www/shop.netping.xa6.ru/wp-content/themes/npshop/functions.php на строке 370
+

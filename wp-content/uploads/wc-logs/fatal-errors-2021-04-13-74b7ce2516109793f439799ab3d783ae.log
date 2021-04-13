@@ -1,0 +1,30 @@
+2021-04-13T00:39:27+00:00 CRITICAL Uncaught Error: Call to a member function is_type() on null in /var/www/shop.netping.xa6.ru/wp-content/themes/npshop/functions.php:732
+Stack trace:
+#0 /var/www/shop.netping.xa6.ru/wp-includes/class-wp-hook.php(292): custom_variable_sale_price_format('<del><span clas...', 27000, 19000)
+#1 /var/www/shop.netping.xa6.ru/wp-includes/plugin.php(212): WP_Hook->apply_filters('<del><span clas...', Array)
+#2 /var/www/shop.netping.xa6.ru/wp-content/plugins/woocommerce/includes/wc-formatting-functions.php(1269): apply_filters('woocommerce_for...', '<del><span clas...', 27000, 19000)
+#3 /var/www/shop.netping.xa6.ru/wp-content/plugins/woocommerce/includes/abstracts/abstract-wc-product.php(1798): wc_format_sale_price(27000, 19000)
+#4 /var/www/shop.netping.xa6.ru/wp-content/themes/npshop/functions.php(974): WC_Product->get_price_html()
+#5 /var/www/shop.netping.xa6.ru/wp-includes/class-wp-hook.php(292): bbloomer_change_cart_table_price_display('<span class="wo...', Array, 'd948b0910362471...')
+#6 /var/www/shop.netping.xa6.ru/ в /var/www/shop.netping.xa6.ru/wp-content/themes/npshop/functions.php на строке 732
+
+2021-04-13T00:39:27+00:00 CRITICAL Uncaught Error: Call to a member function is_type() on null in /var/www/shop.netping.xa6.ru/wp-content/themes/npshop/functions.php:732
+Stack trace:
+#0 /var/www/shop.netping.xa6.ru/wp-includes/class-wp-hook.php(292): custom_variable_sale_price_format('<del><span clas...', 27000, 19000)
+#1 /var/www/shop.netping.xa6.ru/wp-includes/plugin.php(212): WP_Hook->apply_filters('<del><span clas...', Array)
+#2 /var/www/shop.netping.xa6.ru/wp-content/plugins/woocommerce/includes/wc-formatting-functions.php(1269): apply_filters('woocommerce_for...', '<del><span clas...', 27000, 19000)
+#3 /var/www/shop.netping.xa6.ru/wp-content/plugins/woocommerce/includes/abstracts/abstract-wc-product.php(1798): wc_format_sale_price(27000, 19000)
+#4 /var/www/shop.netping.xa6.ru/wp-content/themes/npshop/functions.php(974): WC_Product->get_price_html()
+#5 /var/www/shop.netping.xa6.ru/wp-includes/class-wp-hook.php(292): bbloomer_change_cart_table_price_display('<span class="wo...', Array, 'd948b0910362471...')
+#6 /var/www/shop.netping.xa6.ru/ в /var/www/shop.netping.xa6.ru/wp-content/themes/npshop/functions.php на строке 732
+
+2021-04-13T00:39:27+00:00 CRITICAL Uncaught Error: Call to a member function is_type() on null in /var/www/shop.netping.xa6.ru/wp-content/themes/npshop/functions.php:732
+Stack trace:
+#0 /var/www/shop.netping.xa6.ru/wp-includes/class-wp-hook.php(292): custom_variable_sale_price_format('<del><span clas...', 27000, 19000)
+#1 /var/www/shop.netping.xa6.ru/wp-includes/plugin.php(212): WP_Hook->apply_filters('<del><span clas...', Array)
+#2 /var/www/shop.netping.xa6.ru/wp-content/plugins/woocommerce/includes/wc-formatting-functions.php(1269): apply_filters('woocommerce_for...', '<del><span clas...', 27000, 19000)
+#3 /var/www/shop.netping.xa6.ru/wp-content/plugins/woocommerce/includes/abstracts/abstract-wc-product.php(1798): wc_format_sale_price(27000, 19000)
+#4 /var/www/shop.netping.xa6.ru/wp-content/themes/npshop/functions.php(974): WC_Product->get_price_html()
+#5 /var/www/shop.netping.xa6.ru/wp-includes/class-wp-hook.php(292): bbloomer_change_cart_table_price_display('<span class="wo...', Array, 'd948b0910362471...')
+#6 /var/www/shop.netping.xa6.ru/ в /var/www/shop.netping.xa6.ru/wp-content/themes/npshop/functions.php на строке 732
+

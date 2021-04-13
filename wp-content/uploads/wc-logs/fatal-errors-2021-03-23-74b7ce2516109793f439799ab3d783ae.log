@@ -1,0 +1,22 @@
+2021-03-23T23:54:45+00:00 CRITICAL Uncaught Error: Call to a member function get_image() on boolean in /var/www/shop.netping.xa6.ru/wp-content/themes/npshop/functions.php:383
+Stack trace:
+#0 /var/www/shop.netping.xa6.ru/wp-includes/class-wp-hook.php(292): compatible_devices_list('')
+#1 /var/www/shop.netping.xa6.ru/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#2 /var/www/shop.netping.xa6.ru/wp-includes/plugin.php(484): WP_Hook->do_action(Array)
+#3 /var/www/shop.netping.xa6.ru/wp-content/plugins/woocommerce/templates/content-single-product.php(72): do_action('woocommerce_aft...')
+#4 /var/www/shop.netping.xa6.ru/wp-includes/template.php(732): require('/var/www/shop.n...')
+#5 /var/www/shop.netping.xa6.ru/wp-content/plugins/woocommerce/includes/wc-core-functions.php(284): load_template('/var/www/shop.n...', false)
+#6 /var/www/shop.netping.xa6.ru/wp-content/plugins/woocommerce/templates/single-product.php(37): wc_get_template_part('content', 'single-product')
+#7 /var/www/shop.netping.xa6.ru/wp-includes/template-loader.php( в /var/www/shop.netping.xa6.ru/wp-content/themes/npshop/functions.php на строке 383
+
+2021-03-23T23:55:22+00:00 CRITICAL Uncaught Error: Call to a member function get_image() on boolean in /var/www/shop.netping.xa6.ru/wp-content/themes/npshop/functions.php:383
+Stack trace:
+#0 /var/www/shop.netping.xa6.ru/wp-includes/class-wp-hook.php(292): compatible_devices_list('')
+#1 /var/www/shop.netping.xa6.ru/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#2 /var/www/shop.netping.xa6.ru/wp-includes/plugin.php(484): WP_Hook->do_action(Array)
+#3 /var/www/shop.netping.xa6.ru/wp-content/plugins/woocommerce/templates/content-single-product.php(72): do_action('woocommerce_aft...')
+#4 /var/www/shop.netping.xa6.ru/wp-includes/template.php(732): require('/var/www/shop.n...')
+#5 /var/www/shop.netping.xa6.ru/wp-content/plugins/woocommerce/includes/wc-core-functions.php(284): load_template('/var/www/shop.n...', false)
+#6 /var/www/shop.netping.xa6.ru/wp-content/plugins/woocommerce/templates/single-product.php(37): wc_get_template_part('content', 'single-product')
+#7 /var/www/shop.netping.xa6.ru/wp-includes/template-loader.php( в /var/www/shop.netping.xa6.ru/wp-content/themes/npshop/functions.php на строке 383
+

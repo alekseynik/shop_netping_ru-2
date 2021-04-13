@@ -1,0 +1,18 @@
+2021-03-17T10:42:09+00:00 CRITICAL Uncaught Error: Call to a member function is_type() on null in /var/www/shop.netping.xa6.ru/wp-content/themes/npshop/functions.php:354
+Stack trace:
+#0 /var/www/shop.netping.xa6.ru/wp-includes/class-wp-hook.php(292): custom_variable_sale_price_format('<del><span clas...', 26000, 18000)
+#1 /var/www/shop.netping.xa6.ru/wp-includes/plugin.php(212): WP_Hook->apply_filters('<del><span clas...', Array)
+#2 /var/www/shop.netping.xa6.ru/wp-content/plugins/woocommerce/includes/wc-formatting-functions.php(1269): apply_filters('woocommerce_for...', '<del><span clas...', 26000, 18000)
+#3 /var/www/shop.netping.xa6.ru/wp-content/plugins/woocommerce/includes/abstracts/abstract-wc-product.php(1798): wc_format_sale_price(26000, 18000)
+#4 /var/www/shop.netping.xa6.ru/wp-content/plugins/woocommerce/includes/class-wc-product-variable.php(382): WC_Product->get_price_html()
+#5 /var/www/shop.netping.xa6.ru/wp-content/plugins/woocommerce/includes/class-wc-product-variable.php(312): WC_Product_Variable->get_available_variation(Object(W в /var/www/shop.netping.xa6.ru/wp-content/themes/npshop/functions.php на строке 354
+
+2021-03-17T18:40:58+00:00 CRITICAL Uncaught Error: Call to a member function get_name() on null in /var/www/shop.netping.xa6.ru/wp-content/themes/npshop/functions.php:251
+Stack trace:
+#0 /var/www/shop.netping.xa6.ru/wp-includes/class-wp-hook.php(292): filter_function_name_6671('\xD0\x91\xD0\xB0\xD0\xB7\xD0\xBE\xD0\xB2\xD0\xB0\xD1\x8F ...')
+#1 /var/www/shop.netping.xa6.ru/wp-includes/plugin.php(212): WP_Hook->apply_filters('\xD0\x91\xD0\xB0\xD0\xB7\xD0\xBE\xD0\xB2\xD0\xB0\xD1\x8F ...', Array)
+#2 /var/www/shop.netping.xa6.ru/wp-content/themes/npshop/functions.php(309): apply_filters('woocommerce_var...', '\xD0\x91\xD0\xB0\xD0\xB7\xD0\xBE\xD0\xB2\xD0\xB0\xD1\x8F ...')
+#3 /var/www/shop.netping.xa6.ru/wp-includes/class-wp-hook.php(292): variation_radio_buttons('<select id="mod...', Array)
+#4 /var/www/shop.netping.xa6.ru/wp-includes/plugin.php(212): WP_Hook->apply_filters('<select id="mod...', Array)
+#5 /var/www/shop.netping.xa6.ru/wp-content/plugins/woocommerce/includes/wc-template-functions.php(3056): apply_filters('woocommerce_dro...', '<select i в /var/www/shop.netping.xa6.ru/wp-content/themes/npshop/functions.php на строке 251
+

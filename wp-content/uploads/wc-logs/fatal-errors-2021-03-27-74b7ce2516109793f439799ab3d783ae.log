@@ -1,0 +1,33 @@
+2021-03-27T22:49:33+00:00 CRITICAL Out of memory (allocated 12582912) (tried to allocate 266240 bytes) in /var/www/shop.netping.xa6.ru/wp-includes/pomo/streams.php on line 118
+
+2021-03-27T22:51:30+00:00 CRITICAL Uncaught Error: Call to undefined method WP_Post::the_content() in /var/www/shop.netping.xa6.ru/wp-content/themes/npshop/functions.php:668
+Stack trace:
+#0 /var/www/shop.netping.xa6.ru/wp-content/plugins/woocommerce/templates/single-product/tabs/tabs.php(47): npshop_custom_tab_content('delivery', Array)
+#1 /var/www/shop.netping.xa6.ru/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include('/var/www/shop.n...')
+#2 /var/www/shop.netping.xa6.ru/wp-content/plugins/woocommerce/includes/wc-template-functions.php(1540): wc_get_template('single-product/...')
+#3 /var/www/shop.netping.xa6.ru/wp-includes/class-wp-hook.php(292): woocommerce_output_product_data_tabs('')
+#4 /var/www/shop.netping.xa6.ru/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#5 /var/www/shop.netping.xa6.ru/wp-includes/plugin.php(484): WP_Hook->do_action(Array)
+#6 /var/www/shop.netping.xa6.ru/wp-content/plugins/woocommerce/templates/content-single-product.php(72): do_action('woocommerce_aft...')
+#7 /var/www/ в /var/www/shop.netping.xa6.ru/wp-content/themes/npshop/functions.php на строке 668
+
+2021-03-27T22:58:35+00:00 CRITICAL Object of class WP_Post could not be converted to string в /var/www/shop.netping.xa6.ru/wp-content/themes/npshop/functions.php на строке 671
+
+2021-03-27T22:58:35+00:00 CRITICAL Object of class WP_Post could not be converted to string в /var/www/shop.netping.xa6.ru/wp-content/themes/npshop/functions.php на строке 671
+
+2021-03-27T22:58:52+00:00 CRITICAL Object of class WP_Post could not be converted to string в /var/www/shop.netping.xa6.ru/wp-content/themes/npshop/functions.php на строке 671
+
+2021-03-27T22:58:52+00:00 CRITICAL Object of class WP_Post could not be converted to string в /var/www/shop.netping.xa6.ru/wp-content/themes/npshop/functions.php на строке 671
+
+2021-03-27T23:50:18+00:00 CRITICAL Object of class WP_Post could not be converted to string в /var/www/shop.netping.xa6.ru/wp-content/themes/npshop/functions.php на строке 675
+
+2021-03-27T23:50:27+00:00 CRITICAL Object of class WP_Post could not be converted to string в /var/www/shop.netping.xa6.ru/wp-content/themes/npshop/functions.php на строке 675
+
+2021-03-27T23:50:28+00:00 CRITICAL Object of class WP_Post could not be converted to string в /var/www/shop.netping.xa6.ru/wp-content/themes/npshop/functions.php на строке 675
+
+2021-03-27T23:50:43+00:00 CRITICAL Object of class WP_Post could not be converted to string в /var/www/shop.netping.xa6.ru/wp-content/themes/npshop/functions.php на строке 675
+
+2021-03-27T23:50:43+00:00 CRITICAL Object of class WP_Post could not be converted to string в /var/www/shop.netping.xa6.ru/wp-content/themes/npshop/functions.php на строке 675
+
+2021-03-27T23:50:47+00:00 CRITICAL Object of class WP_Post could not be converted to string в /var/www/shop.netping.xa6.ru/wp-content/themes/npshop/functions.php на строке 675
+
