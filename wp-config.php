@@ -23,13 +23,13 @@
 define( 'DB_NAME', 'shopnetping' );
 
 /** MySQL database username */
-define( 'DB_USER', 'shopnetping' );
+define( 'DB_USER', 'npadmin' );
 
 /** MySQL database password */
-define( 'DB_PASSWORD', 'DjZMbpxTVrfZE0EC' );
+define( 'DB_PASSWORD', 'sN81siTe#!aLE*1' );
 
 /** MySQL hostname */
-define( 'DB_HOST', 'localhost' );
+define( 'DB_HOST', 'netpingdb.mysql.database.azure.com' );
 
 /** Database Charset to use in creating database tables. */
 define( 'DB_CHARSET', 'utf8' );
