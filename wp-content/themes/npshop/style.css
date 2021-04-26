@@ -811,6 +811,7 @@ ul.products li.product h2.woocommerce-loop-product__title {
     font-size: 14px;
     font-weight: bold;
     margin-bottom: 20px;
+    text-transform: uppercase;
 }
 
 h2.woocommerce-loop-product__title,
@@ -848,11 +849,10 @@ ul.products li.product a.added_to_cart {
 ul.products li.product.sale .price {
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
 ul.products li.product.sale .price ins {
-    /* margin: 10px 0 0; */
+    margin: 0;
 }
 
 /*Single product*/
@@ -938,10 +938,15 @@ a.desc-tab-link {
     width: 40%;
     margin-right: 30px;
 }
-
-
 .price .woocommerce-Price-amount.amount {
-    font-size: 34px;
+    font-size: 36px;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+
+ul.products li.product .price .woocommerce-Price-amount.amount {
+    font-size: 30px;
     font-weight: 400;
     white-space: nowrap;
 }
@@ -1180,7 +1185,7 @@ del .nds_notice {
 }
 
 .ya-share2__link_more .ya-share2__title::after {
-    content: " корзиной";
+    content: " РєРѕСЂР·РёРЅРѕР№";
 }
 
 .storefront-breadcrumb .col-full nav {
