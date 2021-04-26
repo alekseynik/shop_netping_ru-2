@@ -1,0 +1,2 @@
+2021-04-19T20:57:25+00:00 CRITICAL Out of memory (allocated 2097152) (tried to allocate 73728 bytes) в /var/www/shop.netping.xa6.ru/wp-includes/media.php на строке 4527
+

@@ -1,0 +1,2 @@
+2021-04-20T10:11:18+00:00 CRITICAL syntax error, unexpected 'const' (T_CONST), expecting variable (T_VARIABLE) в /var/www/shop.netping.xa6.ru/wp-content/plugins/woo-checkout-field-editor-pro/admin/class-thwcfd-admin.php на строке 19
+

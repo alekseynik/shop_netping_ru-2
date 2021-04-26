@@ -1,0 +1,283 @@
+# Translation of Plugins - FiboSearch &#8211; Ajax Search for WooCommerce - Stable (latest release) in Russian
+# This file is distributed under the same license as the Plugins - FiboSearch &#8211; Ajax Search for WooCommerce - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2019-03-29 00:19:39+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n % 10 == 1 && n % 100 != 11) ? 0 : ((n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14)) ? 1 : 2);\n"
+"X-Generator: GlotPress/3.0.0-alpha.2\n"
+"Language: ru\n"
+"Project-Id-Version: Plugins - FiboSearch &#8211; Ajax Search for WooCommerce - Stable (latest release)\n"
+
+#: partials/admin/indexer-header-demo.php:16
+msgid "Show details"
+msgstr "Смотреть подробнее"
+
+#: partials/admin/indexer-header-demo.php:11
+msgid "The search index does not exist yet. Build it now."
+msgstr "Индекс поиска еще не существует. Постройте его."
+
+#: partials/admin/features.php:33
+msgid "Upgrade Now!"
+msgstr "Обновить!"
+
+#: partials/admin/features.php:31
+msgid "And more..."
+msgstr "и больше..."
+
+#: includes/Settings.php:632
+msgid "Index status"
+msgstr "Статус индекса"
+
+#: includes/Settings.php:625
+msgid "Hard"
+msgstr "Точно"
+
+#: includes/Settings.php:624
+msgid "Normal"
+msgstr "Нормально"
+
+#: includes/Settings.php:623
+msgid "Soft"
+msgstr "Примерно"
+
+#: includes/Settings.php:622
+msgid "-- Disabled"
+msgstr "-- Отключить"
+
+#: includes/Settings.php:617
+msgid "Fuzzy matching"
+msgstr "Неточное совпадение"
+
+#: includes/Settings.php:570
+msgid "Speed up search!"
+msgstr "Ускорьте поиск!"
+
+#: includes/Settings.php:525
+msgid "Fuzziness"
+msgstr "Точность"
+
+#: includes/Settings.php:564
+msgid "Pro features"
+msgstr "Особенности Pro версии"
+
+#: includes/Settings.php:491 partials/admin/features.php:23
+msgid "Search in attributes"
+msgstr "Поиск по атрибутам"
+
+#: includes/Settings.php:484
+msgid "Search in SKU"
+msgstr "Поиск по артикулу"
+
+#: includes/Settings.php:478
+msgid "Search in short description"
+msgstr "Поиск в кратком описании"
+
+#: includes/Settings.php:472
+msgid "Search in description"
+msgstr "Поиск в описании"
+
+#: includes/Settings.php:124
+msgid "Increase sales"
+msgstr "Увеличивать объем продаж"
+
+#: includes/Admin/Troubleshooting.php:309
+#: includes/Admin/Troubleshooting.php:312
+msgid "Required PHP extension: %s"
+msgstr "Требуемое расширение PHP: %s"
+
+#: includes/Admin/Promo/Upgrade.php:65
+msgid "Upgrade Now"
+msgstr "Обновить сейчас"
+
+#: includes/Admin/Promo/Upgrade.php:63
+msgid "and more..."
+msgstr "и больше..."
+
+#: includes/Admin/Promo/Upgrade.php:51
+msgid "Search in attributes and variation products SKUs (option)"
+msgstr "Поиск по атрибутам и артикулам вариаций товаров (опция)"
+
+#: includes/Admin/Promo/Upgrade.php:49 partials/admin/features.php:21
+msgid "Fuzzy search"
+msgstr "Неточный поиск"
+
+#: includes/Admin/SettingsAPI.php:706
+msgid "Contact"
+msgstr "Контакты"
+
+#: includes/Helpers.php:918
+msgctxt "in categories fe. in Books > Crime stories"
+msgid "in"
+msgstr "в"
+
+#: partials/admin/indexer-header-demo.php:15
+msgid "Build index"
+msgstr "Построить индекс"
+
+#: includes/Settings.php:179
+msgid "To set 100% width leave blank"
+msgstr "Чтобы установить ширину 100%, оставьте пустым"
+
+#: includes/Settings.php:176
+msgid "Max form width"
+msgstr "Максимальная ширина формы"
+
+#: includes/Settings.php:241
+msgid "Colors"
+msgstr "Цвета"
+
+#: includes/Helpers.php:475 includes/Helpers.php:478
+msgid "Pro"
+msgstr "Pro"
+
+#: includes/Admin/Troubleshooting.php:44 includes/Admin/Troubleshooting.php:63
+msgid "Troubleshooting"
+msgstr "Поиск проблемы"
+
+#: includes/Admin/Promo/FeedbackNotice.php:88
+msgid "No thanks"
+msgstr "Нет, спасибо"
+
+#: includes/Admin/Promo/FeedbackNotice.php:84
+msgid "Review %s"
+msgstr "Отзывов %s"
+
+#: includes/Admin/Promo/FeedbackNotice.php:73
+msgid "Hey %s, it's Damian Góra from %s. You have used this free plugin for some time now, and I hope you like it!"
+msgstr "Привет, %s! Это Damian Góra из %s. Вы пользуетесь этим плагином уже давно, надеюсь он вам понравился!"
+
+#: includes/Settings.php:335 includes/Helpers.php:920
+msgid "No results"
+msgstr "Ничего не найдено"
+
+#: includes/Settings.php:364
+msgid "Show SKU"
+msgstr "Показывать артикул"
+
+#: includes/Settings.php:167
+msgid "Minimum characters"
+msgstr "Минимум символов"
+
+#. Author of the plugin
+msgid "Damian Góra"
+msgstr "Damian Góra"
+
+#: includes/Helpers.php:901
+msgid "Category"
+msgstr "Категория"
+
+#: includes/Helpers.php:902
+msgid "Tag"
+msgstr "Метка"
+
+#: partials/admin/how-to-use.php:18
+msgid "Widgets Screen"
+msgstr "Виджеты"
+
+#: includes/Settings.php:450
+msgid "Highlight color"
+msgstr "Цвет выделенного текста"
+
+#: includes/Settings.php:443
+msgid "Text color"
+msgstr "Цвет текста"
+
+#: includes/Settings.php:282
+msgid "Search submit text"
+msgstr "Текст кнопки \"Поиск\""
+
+#: includes/Settings.php:261
+msgid "Search input text"
+msgstr "Текст в поле \"Поиск\""
+
+#: includes/Settings.php:357
+msgid "Show product description"
+msgstr "Показать описание товара"
+
+#: includes/Admin/SettingsAPI.php:507
+msgid "Choose File"
+msgstr "Выбрать файл"
+
+#: includes/Settings.php:161 includes/Settings.php:311
+msgid "Basic"
+msgstr "Основное "
+
+#: widget.php:32
+msgid "Title"
+msgstr "Название"
+
+#: partials/search-form.php:30 partials/admin/search-preview.php:34
+msgid "Products search"
+msgstr "Поиск товаров"
+
+#: includes/Settings.php:202 includes/Helpers.php:923
+msgid "Search for products..."
+msgstr "Поиск товаров..."
+
+#: includes/Settings.php:185
+msgid "Show submit button"
+msgstr "Показывать кнопку"
+
+#: includes/Settings.php:193
+msgid "To display the magnifier icon leave this field empty."
+msgstr "Чтобы отображать лупу оставьте это поле пустым."
+
+#: includes/Settings.php:196 partials/search-form.php:46
+#: partials/themes/ekommart.php:21
+msgid "Search"
+msgstr "Поиск"
+
+#: includes/Settings.php:200
+msgid "Search input placeholder"
+msgstr "Подсказка в поле поиска"
+
+#: includes/Settings.php:345
+msgid "Show product image"
+msgstr "Показывать фото товара"
+
+#: includes/Settings.php:351
+msgid "Show price"
+msgstr "Показывать цену"
+
+#: includes/Settings.php:254
+msgid "Search input background"
+msgstr "Фон поля ввода"
+
+#: includes/Settings.php:268
+msgid "Search input border"
+msgstr "Цвет рамки поля ввода"
+
+#: includes/Settings.php:275
+msgid "Search submit background"
+msgstr "Фон кнопки поиска"
+
+#: includes/Settings.php:429
+msgid "Suggestion background"
+msgstr "Фон результатов"
+
+#: includes/Settings.php:436
+msgid "Suggestion selected"
+msgstr "Выбранный результат"
+
+#: includes/Settings.php:457
+msgid "Border color"
+msgstr "Цвет рамки"
+
+#: includes/Settings.php:289
+msgid "Preloader"
+msgstr "Анимация загрузки"
+
+#: includes/Settings.php:295
+msgid "Show preloader"
+msgstr "Показывать загрузку"
+
+#: includes/Settings.php:302
+msgid "Upload preloader image"
+msgstr "Изображение загрузчика"
+
+#: widget.php:25
+msgid "AJAX (live) search form for WooCommerce"
+msgstr "Ajax поиск для WooCommerce"

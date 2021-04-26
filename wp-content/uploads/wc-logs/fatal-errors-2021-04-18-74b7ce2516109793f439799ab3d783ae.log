@@ -1,0 +1,24 @@
+2021-04-18T12:48:43+00:00 CRITICAL Uncaught Error: Call to a member function is_variable() on array in /var/www/shop.netping.xa6.ru/wp-content/themes/npshop/functions.php:828
+Stack trace:
+#0 /var/www/shop.netping.xa6.ru/wp-includes/class-wp-hook.php(292): npshop_woocommerce_breadcrumbs(Array)
+#1 /var/www/shop.netping.xa6.ru/wp-includes/plugin.php(212): WP_Hook->apply_filters(Array, Array)
+#2 /var/www/shop.netping.xa6.ru/wp-content/plugins/woocommerce/includes/wc-template-functions.php(2224): apply_filters('woocommerce_bre...', Array)
+#3 /var/www/shop.netping.xa6.ru/wp-includes/class-wp-hook.php(292): woocommerce_breadcrumb('')
+#4 /var/www/shop.netping.xa6.ru/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#5 /var/www/shop.netping.xa6.ru/wp-includes/plugin.php(484): WP_Hook->do_action(Array)
+#6 /var/www/shop.netping.xa6.ru/wp-content/themes/storefront/header.php(60): do_action('storefront_befo...')
+#7 /var/www/shop.netping.xa6.ru/wp-includes/template.php(730): require_once('/var/www/shop.n...')
+#8 /var/www/shop.netping.x в /var/www/shop.netping.xa6.ru/wp-content/themes/npshop/functions.php на строке 828
+
+2021-04-18T15:34:15+00:00 CRITICAL Out of memory (allocated 10485760) (tried to allocate 299008 bytes) in /var/www/shop.netping.xa6.ru/wp-includes/pomo/streams.php on line 215
+
+2021-04-18T16:58:24+00:00 CRITICAL Uncaught Error: Call to a member function is_type() on boolean in /var/www/shop.netping.xa6.ru/wp-content/themes/npshop/functions.php:890
+Stack trace:
+#0 /var/www/shop.netping.xa6.ru/wp-admin/includes/template.php(1389): create_meta_meta_box(Object(WP_Post), Array)
+#1 /var/www/shop.netping.xa6.ru/wp-admin/edit-form-advanced.php(688): do_meta_boxes(Object(WP_Screen), 'normal', Object(WP_Post))
+#2 /var/www/shop.netping.xa6.ru/wp-admin/post.php(206): require('/var/www/shop.n...')
+#3 {main}
+  thrown в /var/www/shop.netping.xa6.ru/wp-content/themes/npshop/functions.php на строке 890
+
+2021-04-18T19:55:00+00:00 CRITICAL Out of memory (allocated 18874368) (tried to allocate 20480 bytes) в /var/www/shop.netping.xa6.ru/wp-includes/functions.php на строке 624
+

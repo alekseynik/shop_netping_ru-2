@@ -1,0 +1,46 @@
+2021-04-21T00:56:45+00:00 CRITICAL Out of memory (allocated 4194304) (tried to allocate 20480 bytes) в /var/www/shop.netping.xa6.ru/wp-includes/plugin.php на строке 1371
+
+2021-04-21T00:56:45+00:00 CRITICAL Out of memory (allocated 10485760) (tried to allocate 20480 bytes) в /var/www/shop.netping.xa6.ru/wp-includes/class-wp-hook.php на строке 78
+
+2021-04-21T00:56:45+00:00 CRITICAL Out of memory (allocated 4194304) (tried to allocate 20480 bytes) в /var/www/shop.netping.xa6.ru/wp-includes/plugin.php на строке 1371
+
+2021-04-21T00:56:45+00:00 CRITICAL Out of memory (allocated 8388608) (tried to allocate 356352 bytes) in /var/www/shop.netping.xa6.ru/wp-includes/pomo/streams.php on line 215
+
+2021-04-21T01:01:59+00:00 CRITICAL Out of memory (allocated 6291456) (tried to allocate 622592 bytes) in /var/www/shop.netping.xa6.ru/wp-includes/pomo/streams.php on line 215
+
+2021-04-21T01:01:59+00:00 CRITICAL Out of memory (allocated 8388608) (tried to allocate 20480 bytes) в /var/www/shop.netping.xa6.ru/wp-includes/functions.php на строке 6424
+
+2021-04-21T01:02:12+00:00 CRITICAL Out of memory (allocated 6291456) (tried to allocate 20480 bytes) в /var/www/shop.netping.xa6.ru/wp-includes/functions.php на строке 6424
+
+2021-04-21T01:03:03+00:00 CRITICAL Out of memory (allocated 8388608) (tried to allocate 20480 bytes) в /var/www/shop.netping.xa6.ru/wp-includes/plugin.php на строке 4461
+
+2021-04-21T01:03:09+00:00 CRITICAL Out of memory (allocated 2097152) (tried to allocate 577536 bytes) in /var/www/shop.netping.xa6.ru/wp-includes/pomo/streams.php on line 215
+
+2021-04-21T01:03:10+00:00 CRITICAL Out of memory (allocated 6291456) (tried to allocate 20480 bytes) в /var/www/shop.netping.xa6.ru/wp-includes/plugin.php на строке 1371
+
+2021-04-21T01:03:10+00:00 CRITICAL Out of memory (allocated 4194304) (tried to allocate 20480 bytes) в /var/www/shop.netping.xa6.ru/wp-includes/plugin.php на строке 1371
+
+2021-04-21T01:03:10+00:00 CRITICAL Out of memory (allocated 2097152) (tried to allocate 20480 bytes) в /var/www/shop.netping.xa6.ru/wp-includes/plugin.php на строке 1371
+
+2021-04-21T01:03:10+00:00 CRITICAL Out of memory (allocated 8388608) (tried to allocate 20480 bytes) в /var/www/shop.netping.xa6.ru/wp-includes/plugin.php на строке 1371
+
+2021-04-21T01:03:41+00:00 CRITICAL Out of memory (allocated 4194304) (tried to allocate 12288 bytes) в /var/www/shop.netping.xa6.ru/wp-includes/functions.php на строке 624
+
+2021-04-21T01:03:41+00:00 CRITICAL Out of memory (allocated 2097152) (tried to allocate 4096 bytes) в /var/www/shop.netping.xa6.ru/wp-includes/functions.php на строке 624
+
+2021-04-21T01:03:41+00:00 CRITICAL Out of memory (allocated 2097152) (tried to allocate 4096 bytes) в /var/www/shop.netping.xa6.ru/wp-includes/functions.php на строке 624
+
+2021-04-21T01:04:03+00:00 CRITICAL Out of memory (allocated 2097152) (tried to allocate 266240 bytes) in /var/www/shop.netping.xa6.ru/wp-includes/pomo/streams.php on line 118
+
+2021-04-21T01:04:11+00:00 CRITICAL Out of memory (allocated 2097152) (tried to allocate 266240 bytes) in /var/www/shop.netping.xa6.ru/wp-includes/pomo/streams.php on line 118
+
+2021-04-21T01:06:02+00:00 CRITICAL Out of memory (allocated 2097152) (tried to allocate 266240 bytes) in /var/www/shop.netping.xa6.ru/wp-includes/pomo/streams.php on line 118
+
+2021-04-21T01:06:06+00:00 CRITICAL Out of memory (allocated 2097152) (tried to allocate 81920 bytes) в /var/www/shop.netping.xa6.ru/wp-content/plugins/woocommerce/vendor/jetpack-autoloader/class-php-autoloader.php на строке 87
+
+2021-04-21T01:06:07+00:00 CRITICAL Out of memory (allocated 2097152) (tried to allocate 20480 bytes) в /var/www/shop.netping.xa6.ru/wp-content/plugins/woocommerce/packages/woocommerce-admin/src/API/Init.php на строке 109
+
+2021-04-21T01:18:39+00:00 CRITICAL Out of memory (allocated 18874368) (tried to allocate 950272 bytes) в /var/www/shop.netping.xa6.ru/wp-includes/class.wp-scripts.php на строке 458
+
+2021-04-21T01:24:40+00:00 CRITICAL Out of memory (allocated 2097152) (tried to allocate 20480 bytes) в /var/www/shop.netping.xa6.ru/wp-includes/post.php на строке 2929
+

@@ -1,0 +1,111 @@
+2021-04-25T00:02:42+00:00 CRITICAL Out of memory (allocated 94294016) (tried to allocate 163443240 bytes) в /var/www/shop.netping.xa6.ru/wp-includes/shortcodes.php на строке 218
+
+2021-04-25T00:03:05+00:00 CRITICAL Allowed memory size of 268435456 bytes exhausted (tried to allocate 162982312 bytes) в /var/www/shop.netping.xa6.ru/wp-includes/shortcodes.php на строке 218
+
+2021-04-25T00:04:31+00:00 CRITICAL Allowed memory size of 268435456 bytes exhausted (tried to allocate 162982320 bytes) в /var/www/shop.netping.xa6.ru/wp-includes/shortcodes.php на строке 218
+
+2021-04-25T19:05:27+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function get_post_meta(), 0 passed in /var/www/shop.netping.xa6.ru/wp-content/themes/npshop/functions.php on line 489 and at least 1 expected in /var/www/shop.netping.xa6.ru/wp-includes/post.php:2225
+Stack trace:
+#0 /var/www/shop.netping.xa6.ru/wp-content/themes/npshop/functions.php(489): get_post_meta()
+#1 /var/www/shop.netping.xa6.ru/wp-includes/class-wp-hook.php(292): test_output()
+#2 /var/www/shop.netping.xa6.ru/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters()
+#3 /var/www/shop.netping.xa6.ru/wp-includes/plugin.php(484): WP_Hook->do_action()
+#4 /var/www/shop.netping.xa6.ru/wp-content/themes/npshop/footer.php(33): do_action()
+#5 /var/www/shop.netping.xa6.ru/wp-includes/template.php(730): require_once('/var/www/shop.n...')
+#6 /var/www/shop.netping.xa6.ru/wp-includes/template.php(676): load_template()
+#7 /var/www/shop.netping.xa6.ru/wp-includes/general-template.php(92): locate_template()
+#8 /var/www/shop.netping.xa6.ru/wp-content/themes/storefront/ в /var/www/shop.netping.xa6.ru/wp-includes/post.php на строке 2225
+
+2021-04-25T19:05:30+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function get_post_meta(), 0 passed in /var/www/shop.netping.xa6.ru/wp-content/themes/npshop/functions.php on line 489 and at least 1 expected in /var/www/shop.netping.xa6.ru/wp-includes/post.php:2225
+Stack trace:
+#0 /var/www/shop.netping.xa6.ru/wp-content/themes/npshop/functions.php(489): get_post_meta()
+#1 /var/www/shop.netping.xa6.ru/wp-includes/class-wp-hook.php(292): test_output()
+#2 /var/www/shop.netping.xa6.ru/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters()
+#3 /var/www/shop.netping.xa6.ru/wp-includes/plugin.php(484): WP_Hook->do_action()
+#4 /var/www/shop.netping.xa6.ru/wp-content/themes/npshop/footer.php(33): do_action()
+#5 /var/www/shop.netping.xa6.ru/wp-includes/template.php(730): require_once('/var/www/shop.n...')
+#6 /var/www/shop.netping.xa6.ru/wp-includes/template.php(676): load_template()
+#7 /var/www/shop.netping.xa6.ru/wp-includes/general-template.php(92): locate_template()
+#8 /var/www/shop.netping.xa6.ru/wp-content/themes/npshop/temp в /var/www/shop.netping.xa6.ru/wp-includes/post.php на строке 2225
+
+2021-04-25T19:05:34+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function get_post_meta(), 0 passed in /var/www/shop.netping.xa6.ru/wp-content/themes/npshop/functions.php on line 489 and at least 1 expected in /var/www/shop.netping.xa6.ru/wp-includes/post.php:2225
+Stack trace:
+#0 /var/www/shop.netping.xa6.ru/wp-content/themes/npshop/functions.php(489): get_post_meta()
+#1 /var/www/shop.netping.xa6.ru/wp-includes/class-wp-hook.php(292): test_output()
+#2 /var/www/shop.netping.xa6.ru/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters()
+#3 /var/www/shop.netping.xa6.ru/wp-includes/plugin.php(484): WP_Hook->do_action()
+#4 /var/www/shop.netping.xa6.ru/wp-content/themes/npshop/footer.php(33): do_action()
+#5 /var/www/shop.netping.xa6.ru/wp-includes/template.php(730): require_once('/var/www/shop.n...')
+#6 /var/www/shop.netping.xa6.ru/wp-includes/template.php(676): load_template()
+#7 /var/www/shop.netping.xa6.ru/wp-includes/general-template.php(92): locate_template()
+#8 /var/www/shop.netping.xa6.ru/wp-content/plugins/woocommerc в /var/www/shop.netping.xa6.ru/wp-includes/post.php на строке 2225
+
+2021-04-25T19:05:35+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function get_post_meta(), 0 passed in /var/www/shop.netping.xa6.ru/wp-content/themes/npshop/functions.php on line 489 and at least 1 expected in /var/www/shop.netping.xa6.ru/wp-includes/post.php:2225
+Stack trace:
+#0 /var/www/shop.netping.xa6.ru/wp-content/themes/npshop/functions.php(489): get_post_meta()
+#1 /var/www/shop.netping.xa6.ru/wp-includes/class-wp-hook.php(292): test_output()
+#2 /var/www/shop.netping.xa6.ru/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters()
+#3 /var/www/shop.netping.xa6.ru/wp-includes/plugin.php(484): WP_Hook->do_action()
+#4 /var/www/shop.netping.xa6.ru/wp-content/themes/npshop/footer.php(33): do_action()
+#5 /var/www/shop.netping.xa6.ru/wp-includes/template.php(730): require_once('/var/www/shop.n...')
+#6 /var/www/shop.netping.xa6.ru/wp-includes/template.php(676): load_template()
+#7 /var/www/shop.netping.xa6.ru/wp-includes/general-template.php(92): locate_template()
+#8 /var/www/shop.netping.xa6.ru/wp-content/plugins/woocommerc в /var/www/shop.netping.xa6.ru/wp-includes/post.php на строке 2225
+
+2021-04-25T19:05:44+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function get_post_meta(), 0 passed in /var/www/shop.netping.xa6.ru/wp-content/themes/npshop/functions.php on line 489 and at least 1 expected in /var/www/shop.netping.xa6.ru/wp-includes/post.php:2225
+Stack trace:
+#0 /var/www/shop.netping.xa6.ru/wp-content/themes/npshop/functions.php(489): get_post_meta()
+#1 /var/www/shop.netping.xa6.ru/wp-includes/class-wp-hook.php(292): test_output()
+#2 /var/www/shop.netping.xa6.ru/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters()
+#3 /var/www/shop.netping.xa6.ru/wp-includes/plugin.php(484): WP_Hook->do_action()
+#4 /var/www/shop.netping.xa6.ru/wp-content/themes/npshop/footer.php(33): do_action()
+#5 /var/www/shop.netping.xa6.ru/wp-includes/template.php(730): require_once('/var/www/shop.n...')
+#6 /var/www/shop.netping.xa6.ru/wp-includes/template.php(676): load_template()
+#7 /var/www/shop.netping.xa6.ru/wp-includes/general-template.php(92): locate_template()
+#8 /var/www/shop.netping.xa6.ru/wp-content/plugins/woocommerc в /var/www/shop.netping.xa6.ru/wp-includes/post.php на строке 2225
+
+2021-04-25T19:05:49+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function get_post_meta(), 0 passed in /var/www/shop.netping.xa6.ru/wp-content/themes/npshop/functions.php on line 489 and at least 1 expected in /var/www/shop.netping.xa6.ru/wp-includes/post.php:2225
+Stack trace:
+#0 /var/www/shop.netping.xa6.ru/wp-content/themes/npshop/functions.php(489): get_post_meta()
+#1 /var/www/shop.netping.xa6.ru/wp-includes/class-wp-hook.php(292): test_output()
+#2 /var/www/shop.netping.xa6.ru/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters()
+#3 /var/www/shop.netping.xa6.ru/wp-includes/plugin.php(484): WP_Hook->do_action()
+#4 /var/www/shop.netping.xa6.ru/wp-content/themes/npshop/footer.php(33): do_action()
+#5 /var/www/shop.netping.xa6.ru/wp-includes/template.php(730): require_once('/var/www/shop.n...')
+#6 /var/www/shop.netping.xa6.ru/wp-includes/template.php(676): load_template()
+#7 /var/www/shop.netping.xa6.ru/wp-includes/general-template.php(92): locate_template()
+#8 /var/www/shop.netping.xa6.ru/wp-content/plugins/woocommerc в /var/www/shop.netping.xa6.ru/wp-includes/post.php на строке 2225
+
+2021-04-25T19:42:49+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function custom_variable_sale_price_format(), 2 passed in /var/www/shop.netping.xa6.ru/wp-includes/class-wp-hook.php on line 294 and exactly 3 expected in /var/www/shop.netping.xa6.ru/wp-content/themes/npshop/functions.php:918
+Stack trace:
+#0 /var/www/shop.netping.xa6.ru/wp-includes/class-wp-hook.php(294): custom_variable_sale_price_format()
+#1 /var/www/shop.netping.xa6.ru/wp-includes/plugin.php(212): WP_Hook->apply_filters()
+#2 /var/www/shop.netping.xa6.ru/wp-content/plugins/woocommerce/includes/wc-formatting-functions.php(1269): apply_filters()
+#3 /var/www/shop.netping.xa6.ru/wp-content/plugins/woocommerce/includes/abstracts/abstract-wc-product.php(1798): wc_format_sale_price()
+#4 /var/www/shop.netping.xa6.ru/wp-content/plugins/woocommerce/includes/class-wc-product-variable.php(382): WC_Product->get_price_html()
+#5 /var/www/shop.netping.xa6.ru/wp-content/plugins/woocommerce/includes/class-wc-product-variable.php(312): WC_Product_Variable->get_available_varia в /var/www/shop.netping.xa6.ru/wp-content/themes/npshop/functions.php на строке 918
+
+2021-04-25T21:59:13+00:00 CRITICAL Uncaught Error: Call to a member function is_type() on null in /var/www/shop.netping.xa6.ru/wp-content/themes/npshop/functions.php:205
+Stack trace:
+#0 /var/www/shop.netping.xa6.ru/wp-includes/class-wp-hook.php(292): add_price_notice()
+#1 /var/www/shop.netping.xa6.ru/wp-includes/plugin.php(212): WP_Hook->apply_filters()
+#2 /var/www/shop.netping.xa6.ru/wp-content/plugins/woocommerce/includes/wc-formatting-functions.php(625): apply_filters()
+#3 /var/www/shop.netping.xa6.ru/wp-content/plugins/woocommerce/includes/wc-formatting-functions.php(1268): wc_price()
+#4 /var/www/shop.netping.xa6.ru/wp-content/plugins/woocommerce/includes/abstracts/abstract-wc-product.php(1798): wc_format_sale_price()
+#5 /var/www/shop.netping.xa6.ru/wp-content/plugins/woocommerce/templates/loop/price.php(25): WC_Product->get_price_html()
+#6 /var/www/shop.netping.xa6.ru/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include('/var/www/shop.n...')
+#7 /var/www/shop.netping.xa6.ru/wp-content/plugins/woocommerce/includes/wc- в /var/www/shop.netping.xa6.ru/wp-content/themes/npshop/functions.php на строке 205
+
+2021-04-25T21:59:13+00:00 CRITICAL Uncaught Error: Call to a member function is_type() on null in /var/www/shop.netping.xa6.ru/wp-content/themes/npshop/functions.php:205
+Stack trace:
+#0 /var/www/shop.netping.xa6.ru/wp-includes/class-wp-hook.php(292): add_price_notice()
+#1 /var/www/shop.netping.xa6.ru/wp-includes/plugin.php(212): WP_Hook->apply_filters()
+#2 /var/www/shop.netping.xa6.ru/wp-content/plugins/woocommerce/includes/wc-formatting-functions.php(625): apply_filters()
+#3 /var/www/shop.netping.xa6.ru/wp-content/plugins/woocommerce/includes/wc-formatting-functions.php(1268): wc_price()
+#4 /var/www/shop.netping.xa6.ru/wp-content/plugins/woocommerce/includes/abstracts/abstract-wc-product.php(1798): wc_format_sale_price()
+#5 /var/www/shop.netping.xa6.ru/wp-content/plugins/woocommerce/templates/loop/price.php(25): WC_Product->get_price_html()
+#6 /var/www/shop.netping.xa6.ru/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include('/var/www/shop.n...')
+#7 /var/www/shop.netping.xa6.ru/wp-content/plugins/woocommerce/includes/wc- в /var/www/shop.netping.xa6.ru/wp-content/themes/npshop/functions.php на строке 205
+
+2021-04-25T23:11:55+00:00 CRITICAL Out of memory (allocated 2097152) (tried to allocate 12288 bytes) в /var/www/shop.netping.xa6.ru/wp-content/plugins/woocommerce/includes/class-wc-product-simple.php на строке 0
+

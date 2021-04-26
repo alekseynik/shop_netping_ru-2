@@ -1,0 +1,4 @@
+2021-04-17T21:17:01+00:00 CRITICAL Cannot redeclare npshop_woocommerce_breadcrumbs() (previously declared in /var/www/shop.netping.xa6.ru/wp-content/themes/npshop/functions.php:816) в /var/www/shop.netping.xa6.ru/wp-content/themes/npshop/functions.php на строке 825
+
+2021-04-17T21:17:39+00:00 CRITICAL Cannot redeclare npshop_woocommerce_breadcrumbs() (previously declared in /var/www/shop.netping.xa6.ru/wp-content/themes/npshop/functions.php:816) в /var/www/shop.netping.xa6.ru/wp-content/themes/npshop/functions.php на строке 826
+

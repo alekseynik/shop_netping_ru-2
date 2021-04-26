@@ -1,0 +1,10 @@
+2021-04-16T13:06:11+00:00 CRITICAL Out of memory (allocated 10485760) (tried to allocate 20480 bytes) в /var/www/shop.netping.xa6.ru/wp-includes/pomo/streams.php на строке 118
+
+2021-04-16T13:06:11+00:00 CRITICAL Out of memory (allocated 2097152) (tried to allocate 65536 bytes) в /var/www/shop.netping.xa6.ru/wp-content/plugins/woocommerce/includes/wc-template-functions.php на строке 2196
+
+2021-04-16T13:06:11+00:00 CRITICAL Out of memory (allocated 18874368) (tried to allocate 20480 bytes) в /var/www/shop.netping.xa6.ru/wp-includes/class.wp-dependencies.php на строке 314
+
+2021-04-16T14:44:47+00:00 CRITICAL Out of memory (allocated 10485760) (tried to allocate 65536 bytes) в /var/www/shop.netping.xa6.ru/wp-content/plugins/woocommerce/packages/woocommerce-admin/src/Notes/DataStore.php на строке 13
+
+2021-04-16T14:46:47+00:00 CRITICAL Out of memory (allocated 16777216) (tried to allocate 65536 bytes) в /var/www/shop.netping.xa6.ru/wp-content/plugins/woocommerce/packages/woocommerce-admin/src/Notes/DataStore.php на строке 13
+
