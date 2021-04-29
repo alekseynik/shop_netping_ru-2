@@ -18,7 +18,7 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 			
 			<div class="homepage_banner">
-				<img src="" alt="">
+				<?php the_content(); ?>
 			</div>
 			
 			<div class="homepage-products-tabs">

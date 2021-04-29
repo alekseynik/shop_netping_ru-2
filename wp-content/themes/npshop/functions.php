@@ -7,8 +7,6 @@
  * @package npshop
  */
 
-
-
 //SECTION General setup
 
 //ANCHOR load scripts
@@ -161,8 +159,6 @@ function variable_price_at_category($price, $product) {
 
 		$price = wc_price( $min_price ) . $product->get_price_suffix();
 	
-		// $min_price_html = wc_price( $min_price ) . $product->get_price_suffix();
-		// $price = sprintf( __( 'От %1$s', 'woocommerce' ), $min_price_html );
 	}
 	return $price;
 }
@@ -179,46 +175,6 @@ function remove_sale_price_on_category( $price, $regular_price, $sale_price ) {
 		$price = '<ins class="price_wrap">' . ( is_numeric( $sale_price ) ? wc_price( $sale_price )  : $sale_price ) . '<span class="nds_notice"><span>НДС: включено в цену</span><span>Доставка: по России бесплатно</span></span></ins> <del class="price_wrap">' . ( is_numeric( $regular_price ) ? wc_price( $regular_price ) : $regular_price ) . '<span class="action">Акция!</span></del>';
 	}
 	return $price;
-}
-
-// add_filter('woocommerce_format_sale_price', 'custom_variable_sale_price_format', 10, 3);
-function custom_variable_sale_price_format($price, $regular_price, $sale_price) {
-	global $product;
-	global $woocommerce_loop;
-	if ( !is_admin() ) {
-		if ( is_product() && !$woocommerce_loop ?: !$woocommerce_loop['name'] == 'up-sells' ) {
-			$price = '<ins class="price_wrap">' . ( is_numeric( $sale_price ) ? wc_price( $sale_price )  : $sale_price ) . '</ins> <del class="price_wrap">' . ( is_numeric( $regular_price ) ? wc_price( $regular_price ) : $regular_price ) . '<div class="action">Акция!</div></del>';
-		}
-	}
-	return $price;
-}
-
-//ANCHOR add НДС... to price html on single product
-// add_filter('wc_price', 'add_price_notice', 10, 5);
-function add_price_notice($return, $price, $args, $unformatted_price, $original_price ) {
-	global $product;
-	global $woocommerce_loop;
-	// if ( is_product() && $product->is_type('variable') ) {
-	if ( is_product() && $product->is_type('variable') && !$woocommerce_loop['name'] == 'up-sells' ) {
-		$return .= '<div class="nds_notice"><span>НДС: включено в цену</span><span>Доставка: по России бесплатно</span></div>';
-	}
-	
-	if ( is_product() && $product->is_type('simple') && !$woocommerce_loop['name'] == 'up-sells' ) {
-		$return .=  '<span class="nds_notice"><span>НДС: включено в цену</span><span>Доставка: по России бесплатно</span></span>';
-	}
-
-	return $return;
-}
-
-
-add_action('storefront_after_footer', 'test_output');
-function test_output() {
-	// echo is_product();
-	// $page_id = get_queried_object_id();
-	// $page_object = get_page( $page_id );
-	// if ( strpos($page_object->post_content, '[/slider]') );
-	// 	echo '<pre>';
-	// var_dump (get_post_meta($post->ID));
 }
 
 
@@ -501,7 +457,15 @@ add_action('init', function() {
 add_action( 'storefront_after_footer', 'npshop_questions_button' );
 function npshop_questions_button() {
 	?>
-	<a href="#" class="quest-button">?</a>
+	<a href="#open_consultations_modal" class="quest-button">?</a>
+	<div id="open_consultations_modal" class="modalDialog" tabindex="-1">
+		<a href="#close" class="background_close"></a>
+		<div>
+			<a href="#close" title="Закрыть" class="close">&times;</a>
+			<h3>Консультация менеджера</h3>
+			<?php echo do_shortcode('[contact-form-7 id="206" title="Консультация менеджера"]'); ?>
+		</div>
+	</div>
 	<?php
 }
 
@@ -522,7 +486,7 @@ function register_rpwi_widget() {
 
 //!SECTION Widgets
 
-remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_related_products', 20 );
+
 
 
 //SECTION Archive pages
@@ -654,8 +618,10 @@ function remove_variation_price_range() {
 	}
 }
 
+
 remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_meta', 40);
 remove_action('woocommerce_before_single_product_summary', 'woocommerce_show_product_sale_flash', 10);
+remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_related_products', 20 );
 
 //ANCHOR Disable sidebar on single product
 add_filter( 'is_active_sidebar', 'npshop_remove_sidebar', 10, 2 );
@@ -1100,8 +1066,6 @@ add_action( 'woocommerce_after_checkout_form', 'add_featured_products_section' )
 function add_featured_products_section() {
 	echo ('<h2 class="h-line">Рекомендуем</h2>');
 	echo do_shortcode('[products limit="4" columns="4" visibility="featured" ]');
-	// global $woocommerce_product_loop;
-	// var_dump($woocommerce_product_loop);
 }
 
 
@@ -1238,9 +1202,6 @@ function cart_ya_share_link_html( ) {
 }
 
 
-
-// <div class="ya-share2" data-curtain data-shape="round" data-limit="0" data-more-button-type="short" data-services="vkontakte,facebook,telegram,twitter"></div>
-
 //ANCHOR AJAX Event to update share cart link (ajax call is in checkoutscripts.js)
 add_action('wp_ajax_update_share_cart_link', 'update_share_cart_link');
 add_action('wp_ajax_nopriv_update_share_cart_link', 'update_share_cart_link');
@@ -1250,7 +1211,6 @@ function update_share_cart_link() {
     $send_json = array('success'=>false);
     if( $woocommerce->cart->get_cart_total() ) {
         $send_json = array('success'=>true, 'shareCartlink'=> cart_ya_share_link_html() );
-		// $send_json = array('success'=>true, 'shareCartlink'=> 'поделиться корзиной' );
     };
     wp_send_json($send_json);
     die();

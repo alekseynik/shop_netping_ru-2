@@ -252,7 +252,6 @@ input[type="radio"].like-check:checked:before {
     align-items: center;
 }
 
-
 footer .price_link:before {
     filter: invert(99%) sepia(5%) saturate(851%) hue-rotate(213deg) brightness(116%) contrast(100%);
 }
@@ -371,32 +370,32 @@ footer .price_link:before {
     margin-right: 20px;
 }
 
-.widget_product_categories ul li.cat-item-19 a:before {
-    content: url(assets/icons/datchiki.png);
+.widget_product_categories ul li.cat-item-18 a:before {
+    content: url(assets/icons/control19.png);
 }
 
 .widget_product_categories ul li.cat-item-20 a:before {
-    content: url(assets/icons/compact_control.png);
+    content: url(assets/icons/compact_control_3.png);
+}
+
+.widget_product_categories ul li.cat-item-19 a:before {
+    content: url(assets/icons/datchiki_2.png);
 }
 
 .widget_product_categories ul li.cat-item-21 a:before {
     content: url(assets/icons/access.png);
 }
 
-.widget_product_categories ul li.cat-item-18 a:before {
-    content: url(assets/icons/control19.png);
-}
-
-.widget_product_categories ul li.cat-item-23 a:before {
-    content: url(assets/icons/nabory_po.png);
-}
-
 .widget_product_categories ul li.cat-item-22 a:before {
     content: url(assets/icons/nabory_2.png);
 }
 
+.widget_product_categories ul li.cat-item-23 a:before {
+    content: url(assets/icons/nabory_po_2.png);
+}
+
 .widget_product_categories ul li.cat-item-24 a:before {
-    content: url(assets/icons/nabory_system_2.png);
+    content: url(assets/icons/nabory_system_3.png);
 }
 
 /** 
@@ -660,6 +659,10 @@ footer .sub-form-wrapper input[type="submit"] {
     font-weight: normal;
 }
 
+.site-footer a {
+    text-decoration: none;
+}
+
 .site-search .widget_product_search form::before {
     display: none;
 }
@@ -717,6 +720,10 @@ footer .sub-form-wrapper input[type="submit"] {
 /**
 * Homepage V1 styles
 */
+
+.home_page_banner_img {
+    margin-top: 15px;
+}
 
 .homepage-products-tabs .tab-row {
     display: flex;
@@ -1185,7 +1192,7 @@ del .nds_notice {
 }
 
 .ya-share2__link_more .ya-share2__title::after {
-    content: " РєРѕСЂР·РёРЅРѕР№";
+    content: " корзиной";
 }
 
 .storefront-breadcrumb .col-full nav {
@@ -1545,8 +1552,9 @@ div.wpcf7-mail-sent-ok {
         position: relative;
     }
 
-    .site-header-cart .icon_cart_container i {
-        /* font-size: 24px; */
+    .site-header-cart.focus .widget_shopping_cart,
+    .site-header-cart:hover .widget_shopping_cart {
+        left: calc(-400px + 23px);
     }
 
     .mobile-catalog-widget {
