@@ -54,14 +54,7 @@ do_action( 'woocommerce_cart_is_empty' );
 				<p>Вы можете обратиться к нашим менеджерам для консультации</p>
 			
 				<a href="#open_consultations_modal" class="button">Оставить заявку</a>
-				<div id="open_consultations_modal" class="modalDialog" tabindex="-1">
-					<a href="#close" class="background_close"></a>
-					<div>
-						<a href="#close" title="Закрыть" class="close">&times;</a>
-						<h3>Консультация менеджера</h3>
-						<?php echo do_shortcode('[contact-form-7 id="206" title="Консультация менеджера"]'); ?>
-					</div>
-				</div>
+
 			<?php else: ?>
 				<p>Спасибо за ваш заказ.</br> Мы свяжемся с вами  при первой возможности  для подтверждения заказа.</p>
 				<a class="button wc-backward" href="<?php echo esc_url( apply_filters( 'woocommerce_return_to_shop_redirect', wc_get_page_permalink( 'shop' ) ) ); ?>">Понятно</a>

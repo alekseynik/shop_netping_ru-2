@@ -816,6 +816,9 @@ ul.products li.product img {
 
 ul.products li.product h2.woocommerce-loop-product__title {
     font-size: 14px;
+    line-height: 1em;
+    height: 2em;
+    overflow: hidden;
     font-weight: bold;
     margin-bottom: 20px;
     text-transform: uppercase;
@@ -831,6 +834,22 @@ ul.products li.product .price {
 .archive-product-desc {
     font-size: 13px;
     line-height: 120%;
+    position: relative;
+    overflow: hidden;
+    height: 100px;
+}
+
+.archive-product-desc:after {
+    content: '';
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height: 100%;
+    z-index: 2;
+    /* background: linear-gradient(rgba(255,255,255,0) 0%, rgba(255,255,255,1) 95%); */
+    background: linear-gradient(#fff0 0%, #fff0 50%,  #fff 90%);
+    /* background: linear-gradient(#fff0 0%, #fff0 65%,  #fff 7.4em); */
 }
 
 ul.products li.product .price {
@@ -1710,6 +1729,8 @@ div.wpcf7-mail-sent-ok {
         max-width: 140px;
     }
 
+    .right-sidebar .site-content .col-full,
+    .left-sidebar .site-content .col-full,
     .site-content .col-full {
         flex-direction: column;
     }
@@ -1721,6 +1742,7 @@ div.wpcf7-mail-sent-ok {
     .site-main ul.products.columns-3 li.product {
         width: 100%;
         margin-bottom: 20px;
+        height: auto;
     }
 
     .p-nav-tab {

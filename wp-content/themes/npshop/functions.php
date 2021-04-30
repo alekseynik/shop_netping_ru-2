@@ -492,15 +492,12 @@ function register_rpwi_widget() {
 //SECTION Archive pages
 
 
-
-
-
 //ANCHOR add short description for product on archive page
 add_action('woocommerce_after_shop_loop_item_title', 'add_short_desc_to_archive_product', 3);
 function add_short_desc_to_archive_product() {
 	global $product;
 	// echo '<div class="archive-product-desc">' . substr($product->get_short_description(), 0, 250 ) . '</div>';
-	echo '<div class="archive-product-desc">' . wp_trim_excerpt( ) . '</div>';
+	echo '<div class="archive-product-desc">' . wp_trim_excerpt($product->get_short_description()) . '</div>';
 }
 
 //ANCHOR length of excerpt in words
@@ -1053,7 +1050,7 @@ function npshop_order_review() {
 		<p id="cart-total-price" class="order-total"><?php wc_cart_totals_order_total_html() ?></p>
 		<p>НДС включен в цену товара</p>
 		<p>Доставка по России БЕСПЛАТНО</p>
-		<p style="font-size:14px; margin-bottom:0">Подробнее о покупке и достaвке <a href="">здесь</a></p>
+		<p style="font-size:14px; margin-bottom:0">Подробнее о покупке и достaвке <a href=" <?php echo site_url('pokupatelyam') ?>">здесь</a></p>
 	</div>
 	<?php
 }
