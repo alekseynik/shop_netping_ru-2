@@ -20,6 +20,8 @@ function npshop_frontend_scripts() {
 		));
 		wp_enqueue_script('ya_share', 'https://yastatic.net/share2/share.js', array() );
 	}
+
+	wp_enqueue_script( 'npshopscripts', get_stylesheet_directory_uri() . '/js/npshopscripts.js', array( 'jquery' ));
 }
 
 //ANCHOR add micro_thumb image size
@@ -428,8 +430,8 @@ function npshop_header_bar() {
 //ANCHOR add catalog menu widget under header (for mobile view)
 add_action( 'storefront_before_content', 'under_header_widget_on_mobile', 13 );
 function under_header_widget_on_mobile() {
-	the_widget( 'WC_Widget_Product_Categories', 'title=Каталог&hierarchical=1&max_depth=1', array(
-		'before_widget' => '<div class="widget mobile-catalog-widget %s">',
+	the_widget( 'WC_Widget_Product_Categories', 'title=Каталог&hierarchical=1&max_depth=1&orderby=order', array(
+		'before_widget' => '<div class="cat_toggle"></div><div class="widget mobile-catalog-widget %s">',
 		'before_title'  => '<div class="col-full"><h2 class="widgettitle">',
 		'after_title'   => '</div></h2>'
 	) );
