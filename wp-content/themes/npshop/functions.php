@@ -328,7 +328,7 @@ function npshop_rearrange_header_elements() {
 }
 
 function npshop_header_company_name() {
-	echo '<h2>ООО «Алентис Электроникс»</h2>';
+	echo '<h2><a href="http://netping.ru">ООО «Алентис Электроникс»</a></h2>';
 }
 
 function npshop_header_first_row_wrapper() {
