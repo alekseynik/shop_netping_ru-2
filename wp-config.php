@@ -29,7 +29,7 @@ define( 'DB_USER', 'npadmin' );
 define( 'DB_PASSWORD', 'dmtz3MXePNWH8cx' );
 
 /** MySQL hostname */
-define( 'DB_HOST', 'npdbprod.mysql.database.azure.com' );
+define( 'DB_HOST', 'sitesnpdbprod.mysql.database.azure.com' );
 
 /** Database Charset to use in creating database tables. */
 define( 'DB_CHARSET', 'utf8' );
