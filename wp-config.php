@@ -22,7 +22,7 @@
 /** The name of the database for WordPress */
 $db_name = getenv("DBPROD_NAME");
 $db_user = getenv("DBPROD_USER");
-$db_host = getenv("DBPROD_host");
+$db_host = getenv("DBPROD_HOST");
 $db_password = getenv("DBPROD_PASSWORD");
 
 define( 'DB_NAME', $db_name );
