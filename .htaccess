@@ -14,3 +14,5 @@ RewriteRule . /index.php [L]
 </IfModule>
 
 # END WordPress
+
+php_value upload_max_filesize 16M
