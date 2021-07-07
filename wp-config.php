@@ -84,12 +84,3 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 /** Sets up WordPress vars and included files. */
 require_once ABSPATH . 'wp-settings.php';
-
-
-/** remove redirecting. */
-define('WP_SITEURL', 'https://site.com');
-define('WP_HOME', 'https://site.com');
-define('FORCE_SSL_ADMIN', true);
-define('FORCE_SSL_LOGIN', true);
-if ($_SERVER['HTTP_X_FORWARDED_PROTO'] == 'https')
-$_SERVER['HTTPS']='on'; 
