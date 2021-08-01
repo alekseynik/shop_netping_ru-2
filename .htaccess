@@ -1,3 +1,10 @@
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP:X-Forwarded-Proto} !https
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
+
+SetEnv HTTPS "on"
+SetEnv HTTP_X_FORWARDED_PROTO "https"
 
 # BEGIN WordPress
 # Директивы (строки) между `BEGIN WordPress` и `END WordPress`
@@ -14,3 +21,6 @@ RewriteRule . /index.php [L]
 </IfModule>
 
 # END WordPress
+
+php_value upload_max_filesize 16M
+php_value post_max_size 16M
