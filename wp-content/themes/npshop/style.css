@@ -56,7 +56,7 @@ textarea {
 	color: #404040;
 	font-family: "Gotham Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
     line-height: 120%;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: normal;
 }
 
@@ -87,15 +87,15 @@ option {
 }
 
 h1 {
-    font-size: 30px;
+    font-size: 32px;
 }
 
 h2 {
-    font-size: 30px;
+    font-size: 24px;
 }
 
 h3 {
-    font-size: 18px;
+    font-size: 16px;
 }
 
 ol, ul {
@@ -179,13 +179,13 @@ input[type="number"] {
     -webkit-appearance: none;
     -moz-appearance: textfield;
     border: none;
-    font-size: 18px;
+    font-size: 16px;
     width: 2em;
     padding: 0;
 }
 
 .single-product div.product .entry-summary .quantity input.qty {
-    font-size: 30px;
+    font-size: 24px;
 }
 
 .quantity input.qty::-webkit-inner-spin-button,
@@ -370,31 +370,31 @@ footer .price_link:before {
     margin-right: 20px;
 }
 
-.widget_product_categories ul li.cat-item-18 a:before {
+.widget_product_categories ul li.cat-item-41 a:before {
     content: url(assets/icons/control19.png);
 }
 
-.widget_product_categories ul li.cat-item-20 a:before {
+.widget_product_categories ul li.cat-item-54 a:before {
     content: url(assets/icons/compact_control_3.png);
 }
 
-.widget_product_categories ul li.cat-item-19 a:before {
+.widget_product_categories ul li.cat-item-55 a:before {
     content: url(assets/icons/datchiki_2.png);
 }
 
-.widget_product_categories ul li.cat-item-21 a:before {
+.widget_product_categories ul li.cat-item-56 a:before {
     content: url(assets/icons/access.png);
 }
 
-.widget_product_categories ul li.cat-item-22 a:before {
+.widget_product_categories ul li.cat-item-57 a:before {
     content: url(assets/icons/nabory_2.png);
 }
 
-.widget_product_categories ul li.cat-item-23 a:before {
+.widget_product_categories ul li.cat-item-58 a:before {
     content: url(assets/icons/nabory_po_2.png);
 }
 
-.widget_product_categories ul li.cat-item-24 a:before {
+.widget_product_categories ul li.cat-item-59 a:before {
     content: url(assets/icons/nabory_system_3.png);
 }
 
@@ -493,7 +493,7 @@ footer .price_link:before {
 .header-first-row-wrapper h2 {
     min-width: calc(100% - 20px - 66.6%);
     max-width: calc(100% - 20px - 66.6%);
-    font-size: 26px;
+    font-size: 20px;
     margin-bottom: 0;
     color: #009730;
 }
@@ -505,8 +505,8 @@ footer .price_link:before {
 
 .header-bar {
 	width: 100%;
-	height: 50px;
-	font-size: 14px;
+	height: 60px;
+	font-size: 16px;
 	background-color: #143547;
 	z-index: 1;
 	position: relative;
@@ -525,19 +525,24 @@ footer .price_link:before {
 }
 
 .header-bar-block a {
-	color: #009730;
+	color: #fff;
+    text-decoration: underline;
 }
 
 .header-bar-block:last-child {
     background-color: red;
-    padding: 10px 6px;
-    border-radius: 3px;
+    padding: 13px;
+    border-radius: 4px;
 }
 
 .home.blog .site-header, 
 .home.page:not(.page-template-template-homepage) .site-header, 
 .home.post-type-archive-product .site-header {
     margin-bottom: 40px;
+}
+
+.main-navigation ul li {
+    font-size: 20px;
 }
 
 .main-navigation ul.menu>li.menu-item-has-children>a:after,
@@ -836,13 +841,10 @@ ul.products li.product img {
 }
 
 ul.products li.product h2.woocommerce-loop-product__title {
-    font-size: 14px;
     line-height: 1em;
     height: 2em;
     overflow: hidden;
-    font-weight: bold;
     margin-bottom: 20px;
-    text-transform: uppercase;
 }
 
 h2.woocommerce-loop-product__title,
@@ -853,7 +855,7 @@ ul.products li.product .price {
 }
 
 .archive-product-desc {
-    font-size: 13px;
+    font-size: 12px;
     line-height: 120%;
     position: relative;
     overflow: hidden;
@@ -986,14 +988,14 @@ a.desc-tab-link {
     margin-right: 30px;
 }
 .price .woocommerce-Price-amount.amount {
-    font-size: 36px;
+    font-size: 32px;
     font-weight: 500;
     white-space: nowrap;
 }
 
 
 ul.products li.product .price .woocommerce-Price-amount.amount {
-    font-size: 30px;
+    font-size: 16px;
     font-weight: 400;
     white-space: nowrap;
 }
@@ -1067,6 +1069,7 @@ del .nds_notice {
     float: left;
     border: none;
     scroll-margin-top: 1em;
+    font-size: 24px;
 }
 
 .woocommerce-tabs ul.tabs li::after {
@@ -1093,7 +1096,6 @@ del .nds_notice {
 }
 
 .catalog-link .info-text {
-    font-weight: 500;
     margin: 0 100px 0 10px;
     max-width: 50%;
 }
@@ -1112,7 +1114,6 @@ del .nds_notice {
 .compatibles > h3 {
     background-color: #f8f8f8;
     padding: 10px;
-    font-weight: 500;
     margin-top: 20px;
 }
 
@@ -1141,6 +1142,12 @@ del .nds_notice {
 
 .products.upsells .product .nds_notice {
     display: none;
+}
+
+.related>h2:first-child,
+.upsells>h2:first-child {
+    font-size: 24px;
+    margin-bottom: 24px;
 }
 
 .flex-direction-nav {
