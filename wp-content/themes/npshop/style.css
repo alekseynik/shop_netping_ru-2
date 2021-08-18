@@ -229,6 +229,30 @@ input[type="radio"].like-check:checked:before {
     font-size: 14px;
 }
 
+table tr th,
+table tr td {
+	padding: 20px;	
+}
+
+table tr:not(:last-child) th,
+table tr:not(:last-child) td {
+	border-bottom: 1px solid white;
+}
+
+.woocommerce-tabs table tr td {
+	text-align: center;
+}
+
+table,
+table:not(.has-background) tbody tr:nth-child(2n) td,
+table:not(.has-background) tbody td {
+    background-color: #00981e1a;
+}
+
+.single-product div.product table.variations {
+    background-color: initial;
+}
+
 /**
  * npicons
  */
@@ -1327,11 +1351,6 @@ table.cart td.product-remove a.remove::before {
 
 table.cart {
     margin-bottom: 20px;
-}
-
-table:not(.has-background) tbody tr:nth-child(2n) td,
-table:not(.has-background) tbody td {
-    background-color: #fff;
 }
 
 .woocommerce-billing-fields p {
