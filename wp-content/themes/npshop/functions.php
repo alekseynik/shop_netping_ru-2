@@ -634,7 +634,6 @@ function npshop_remove_sidebar( $is_active_sidebar, $index ) {
     return false;
 }
 
-
 //SECTION compatible products on single
 
 //ANCHOR add compatible products fields
@@ -732,7 +731,7 @@ function compatible_devices_list() {
 		echo '<div class="compatible-devices">';
 		if ( !empty($compat_sens_ids) ) {
 			echo '<div class="compatibles compat-sensors">';
-			echo '<h3>Датчики для контроллеров</h3>';
+			// echo '<h3>Датчики для контроллеров</h3>';
 			foreach ( $compat_sens_ids as $compat_sens_id ) {
 				$compat_product = wc_get_product($compat_sens_id);
 				?>
@@ -751,7 +750,7 @@ function compatible_devices_list() {
 
 		if ( !empty($compat_access_ids) ) {
 			echo '<div class="compatibles compat-accessories">';
-			echo '<h3>Аксессуары для контроллеров</h3>';
+			// echo '<h3>Аксессуары для контроллеров</h3>';
 			foreach ( $compat_access_ids as $compat_access_id ) {
 				$compat_product = wc_get_product($compat_access_id);
 				?>
@@ -1002,13 +1001,38 @@ function change_upsells_columns( $args ) {
 //ANCHOR add Full description link on single product
 add_action('woocommerce_after_single_product_summary', 'catalog_link_after_tabs');
 function catalog_link_after_tabs() {
+	global $product;
+	$ext_link = get_post_meta( $product->get_ID(), 'device_external_url', true );
 	?>
 	<div class="catalog-link">
 		<span class="info-icon"></span>
 		<span class="info-text">Подробное описание устройства мы можете изучить в каталоге на сайте производителя</span>
-		<a href="#" class="button">Перейти в каталог</a>
+		<a href="<?php echo $ext_link ?>" class="button" target="_blank">Перейти в каталог</a>
 	</div>
 	<?php
+}
+
+//add external link field for products
+add_action( 'woocommerce_product_options_advanced', 'npshop_device_external_link_field');
+function npshop_device_external_link_field() {
+	global $post;
+	woocommerce_wp_text_input(
+		array(
+			'id'          => 'device_external_url',
+			'value'       => get_post_meta( $post->ID, 'device_external_url', true ),
+			'label'       => 'Ссылка на каталог',
+			'placeholder' => 'https://',
+			'description' => 'URL полностью (c http(s)://)',
+		)
+	);
+}
+
+//save external field link
+add_action( 'woocommerce_process_product_meta', 'npshop_save_external_link' );
+function npshop_save_external_link( $post_id ){
+    if ( isset($_POST['device_external_url']) ) {
+		update_post_meta( $post_id, 'device_external_url', $_POST['device_external_url'] );
+	}
 }
 
 //!SECTION Single product
