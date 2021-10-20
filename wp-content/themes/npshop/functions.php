@@ -964,11 +964,11 @@ function npshop_custom_tab( $tabs ) {
 }
 
 function npshop_delivery_tab_content() {
-	echo get_page_by_path('delivery')->post_content;
+	echo get_page_by_path('delivery') ? get_page_by_path('delivery')->post_content : 'Страница о доставке не создана' ;
 }
 
 function npshop_warranty_tab_content() {
-	echo get_page_by_path('warranty')->post_content;
+	echo get_page_by_path('warranty') ? get_page_by_path('warranty')->post_content : 'Страница о гарантии не создана' ;
 }
 
 //ANCHOR remove heading from description product tab
@@ -979,6 +979,8 @@ add_filter( 'woocommerce_product_description_heading', '__return_false' );
 add_filter('woocommerce_single_product_carousel_options', 'update_woo_flexslider_options');
 function update_woo_flexslider_options($options) {
       $options['directionNav'] = true;
+	  $options['prevText'] = '' ;
+	  $options['nextText'] = '' ;
       return $options;
   }
 
