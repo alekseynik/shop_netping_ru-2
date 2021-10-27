@@ -1203,16 +1203,20 @@ del .nds_notice {
     content: url(assets/icons/arrow-left.svg);
 }
 
+.flex-direction-nav li a.flex-next {
+    right: -40px;
+}
+
 .flex-direction-nav li a{
     text-decoration: none;
     display: block;
     width: 20px;
     height: 30px;
-    margin: -20px 0 0;
+    /* margin: -20px 0 0; */
     position: absolute;
-    top: 50%;
-    z-index: 10;
-    overflow: hidden;
+    /* top: 50%; */
+    /* z-index: 10; */
+    /* overflow: hidden; */
     /* opacity: 0; */
     cursor: pointer;
     color: rgba(0, 0, 0, 0.8);
@@ -1226,8 +1230,13 @@ del .nds_notice {
 
 .single-product div.product .woocommerce-product-gallery .flex-control-thumbs,
 .single-product div.product .woocommerce-product-gallery .flex-viewport {
-    width: 90%;
-    margin: 20px auto;
+    width: 100%;
+    margin: 20px;
+}
+
+.single-product div.product .woocommerce-product-gallery .woocommerce-product-gallery__image a {
+    display: flex;
+    justify-content: center;
 }
 
 .single-product div.product .woocommerce-product-gallery .flex-viewport,
