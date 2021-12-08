@@ -734,16 +734,18 @@ function compatible_devices_list() {
 			// echo '<h3>Датчики для контроллеров</h3>';
 			foreach ( $compat_sens_ids as $compat_sens_id ) {
 				$compat_product = wc_get_product($compat_sens_id);
+				if ($compat_product) {
 				?>
-				<div class="compat-product <?php echo !$compat_product->is_purchasable() ? 'disabled' : '' ?>">
-					<?php echo $compat_product->get_image('micro_thumb'); ?>
-					<a class="name-link" href="<?php echo $compat_product->get_permalink() ?>">
-						<h3><?php echo $compat_product->get_name(); ?> </h3>
-					</a>
-					<?php woocommerce_quantity_input( ); ?>
-					<a href="<?php echo $compat_product->add_to_cart_url() ?>" data-product_id="<?php echo $compat_sens_id ?>" data-quantity="1" class="button npicon icon_cart add_to_cart_button compatible "></a>
-				</div>
+					<div class="compat-product <?php echo !$compat_product->is_purchasable() ? 'disabled' : '' ?>">
+						<?php echo $compat_product->get_image('micro_thumb'); ?>
+						<a class="name-link" href="<?php echo $compat_product->get_permalink() ?>">
+							<h3><?php echo $compat_product->get_name(); ?> </h3>
+						</a>
+						<?php woocommerce_quantity_input( ); ?>
+						<a href="<?php echo $compat_product->add_to_cart_url() ?>" data-product_id="<?php echo $compat_sens_id ?>" data-quantity="1" class="button npicon icon_cart add_to_cart_button compatible "></a>
+					</div>
 				<?php
+				}
 			}
 			echo '</div>';
 		}
@@ -753,16 +755,18 @@ function compatible_devices_list() {
 			// echo '<h3>Аксессуары для контроллеров</h3>';
 			foreach ( $compat_access_ids as $compat_access_id ) {
 				$compat_product = wc_get_product($compat_access_id);
+				if ($compat_product) {
 				?>
-				<div class="compat-product <?php echo !$compat_product->is_purchasable() ? 'disabled' : '' ?>">
-					<?php echo $compat_product->get_image('micro_thumb'); ?>
-					<a class="name-link" href="<?php echo $compat_product->get_permalink() ?>">
-						<h3><?php echo $compat_product->get_name(); ?> </h3>
-					</a>
-					<?php woocommerce_quantity_input( ); ?>
-					<a href="<?php echo $compat_product->add_to_cart_url() ?>" data-product_id="<?php echo $compat_access_id ?>" data-quantity="1" class="button npicon icon_cart add_to_cart_button compatible "></a>
-				</div>
+					<div class="compat-product <?php echo !$compat_product->is_purchasable() ? 'disabled' : '' ?>">
+						<?php echo $compat_product->get_image('micro_thumb'); ?>
+						<a class="name-link" href="<?php echo $compat_product->get_permalink() ?>">
+							<h3><?php echo $compat_product->get_name(); ?> </h3>
+						</a>
+						<?php woocommerce_quantity_input( ); ?>
+						<a href="<?php echo $compat_product->add_to_cart_url() ?>" data-product_id="<?php echo $compat_access_id ?>" data-quantity="1" class="button npicon icon_cart add_to_cart_button compatible "></a>
+					</div>
 				<?php
+				}
 			}
 			echo '</div>';
 		}
@@ -877,15 +881,14 @@ function load_variation_settings_fields( $variations ) {
 
 }
 
-//ANCHOR trim Parent product name from variation title
-add_filter( 'woocommerce_product_variation_title', 'trim_variation_title');
-function trim_variation_title($title_base) {
-	// return stristr( $title_base, '-' );
-	$title_base = explode('-', $title_base);
-	$title_base = array_pop( $title_base );
-	return $title_base;
+//remove separator in variation title
+add_filter( 'woocommerce_product_variation_title_attributes_separator', 'remove_woocommerce_product_variation_title_attributes_separator' );
+function remove_woocommerce_product_variation_title_attributes_separator() {
+	return ' ';
 }
 
+//Always display single variation price
+add_filter( 'woocommerce_show_variation_price', '__return_true' );
 
 //!SECTION radio buttons for variations
 
